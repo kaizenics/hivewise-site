@@ -38,8 +38,8 @@ get_header();
                     <span class="inline-block px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm font-semibold mb-4">Our Beginning</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">From Humble Beginnings</h2>
                     <div class="prose prose-lg max-w-none text-gray-600">
-                        <p>HiveWise started in 2015 with a simple mission: to revolutionize how businesses approach regional market analysis. Our founders, Jane Smith and John Doe, recognized a gap in the market for accessible, actionable regional intelligence.</p>
-                        <p>What began as a small consulting firm with just 5 employees has grown into a comprehensive data analytics platform serving over 500 businesses across the country.</p>
+                        <p>HiveWise, a startup, set out to transform research by combining automated data collection methods with community-driven insights to deliver targeted, actionable insights.</p>
+                        <p>We aspire to deliver high-quality, customized reports at a fraction of the cost, while fostering a vibrant community of experts dedicated to supporting each other’s growth through the sharing of knowledge, insights, and expertise.</p>
                     </div>
                 </div>
             </div>
@@ -243,6 +243,5 @@ get_header();
 
 </main>
 
-<?php get_footer(); ?>
 
        
