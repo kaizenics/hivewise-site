@@ -49,33 +49,13 @@
                                 Home
                             </div>
                         </a>
-
-                        <!-- About Us Dropdown -->
-                        <div class="relative group">
-                            <a href="#">
-                                <div
-                                    class="font-medium text-gray-900 hover:text-blue-600 transition-colors duration-200 flex items-center">
-                                    <span>About Us</span>
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M19 9l-7 7-7-7" />
-                                    </svg>
-                                </div>
-                            </a>
-                            <div
-                                class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 z-50">
-                                <div class="py-1">
-                                    <a href="<?php echo esc_url(home_url('/team')); ?>"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                        Our Team
-                                    </a>
-                                    <a href="<?php echo esc_url(home_url('/values')); ?>"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                        Our Values
-                                    </a>
-                                </div>
+                        
+                        <!-- Our Values link (moved from dropdown) -->
+                        <a href="<?php echo esc_url(home_url('/values')); ?>">
+                            <div class="font-medium text-gray-900 hover:text-blue-600 transition-colors duration-200">
+                                Values
                             </div>
-                        </div>
+                        </a>
 
                         <!-- Blog link -->
                     <!--    <a href="<?php echo esc_url(home_url('/blog')); ?>"
@@ -89,7 +69,7 @@
                             Survey
                         </a>
 
-                        <a href="<?php echo esc_url(home_url('/contact')); ?>">
+                        <a href="<?php echo esc_url(home_url('/survey')); ?>">
                             <div
                                 class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-red-600 hover:bg-red-700 transition-colors">
                                 Contact Us</div>
@@ -134,7 +114,6 @@
                     </button>
                     <div class="hidden pl-4 mt-1 space-y-1 bg-gray-50 rounded-lg">
                     
-                        <a href="<?php echo esc_url(home_url('/team')); ?>" class="block px-4 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 transition-colors">Our Team</a>
                         <a href="<?php echo esc_url(home_url('/values')); ?>" class="block px-4 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 transition-colors">Our Values</a>
                     </div>
                 </div>
