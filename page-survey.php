@@ -83,13 +83,24 @@ get_header();
                 <div class="bg-white rounded-xl shadow-lg p-8 md:p-10">
                     <?php 
                     if (class_exists('WPForms')) {
-                        $forms = wpforms()->form->get('', ['post_title' => 'Customer Survey']);
+                        // Get all available forms
+                        $forms = wpforms()->form->get('', array('orderby' => 'modified', 'order' => 'DESC'));
                         
                         if (!empty($forms)) {
-                            $form = $forms[0];
-                            echo do_shortcode('[wpforms id="' . $form->ID . '" class="wpforms-tailwind"]');
+                            // Use the most recently modified form
+                            $form_id = $forms[0]->ID;
+                            echo do_shortcode('[wpforms id="' . $form_id . '" class="wpforms-tailwind"]');
+                            
+                            // Show admin notice about which form is being displayed
+                            if (current_user_can('edit_posts')) {
+                                echo '<div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 mt-6" role="alert">';
+                                echo '<p class="font-bold">Admin Notice (only visible to editors):</p>';
+                                echo '<p>Currently displaying: <strong>' . esc_html($forms[0]->post_title) . '</strong> (ID: ' . $form_id . ')</p>';
+                                echo '<p>This page automatically displays your most recently modified form. To change the displayed form, simply edit the form you want to display in WPForms.</p>';
+                                echo '</div>';
+                            }
                         } else {
-                            echo '<p class="text-center text-gray-600">Survey form not found. Please create a form named "Customer Survey" in WPForms.</p>';
+                            echo '<p class="text-center text-gray-600">No forms found. Please create a form in WPForms.</p>';
                         }
                     } else {
                         echo '<p class="text-center text-gray-600">Please install and activate WPForms plugin.</p>';
