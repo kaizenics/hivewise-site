@@ -13,9 +13,9 @@ get_header();
                 <!-- Left Content -->
                 <div class="max-w-xl">
                     <h1 class="font-manrope text-5xl font-bold mb-6 mt-12 sm:mt-0">Data-Driven Regional Insights</h1>
-                    <p class="font-manrope text-xl mb-8">HiveWise, a startup, set out to transform research by combining
-                        automated data collection
-                        methods with community-driven insights to deliver targeted, actionable insights.</p>
+                    <p class="font-manrope text-xl mb-8">We believe in the power of collective wisdom and have built a
+                        platform where industry experts can contribute their specialized knowledge while our AI systems
+                        analyze vast amounts of data to identify emerging trends and opportunities.</p>
                     <a href="#about">
                         <button
                             class="border-none bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition-colors">
@@ -79,7 +79,7 @@ get_header();
                         </ul>
                         <a href="#start-solving"
                             class="inline-block w-full bg-red-500 text-white text-center px-6 py-4 rounded-xl hover:bg-red-600 transition-colors font-semibold">
-                            Access Reports
+                            Request Reports
                         </a>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ get_header();
                         </ul>
                         <a href="#learn-more"
                             class="inline-block w-full bg-red-500 text-white text-center px-6 py-4 rounded-xl hover:bg-red-600 transition-colors font-semibold">
-                            Request Custom Reports
+                            Services
                         </a>
                     </div>
                 </div>
@@ -131,27 +131,7 @@ get_header();
 
     <section>
         <!-- Our Beginning Section -->
-        <section class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <div class="md:w-1/2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/our-beginning.jpg"
-                            alt="Our Beginning" class="rounded-xl shadow-xl w-full h-auto">
-                    </div>
-                    <div class="md:w-1/2">
-                        <span
-                            class="inline-block px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm font-semibold mb-4">Our
-                            Beginning</span>
-                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">From Humble Beginnings</h2>
-                        <div class="prose prose-lg max-w-none text-gray-600">
-                            <p>We believe in the power of collective wisdom and have built a platform where industry
-                                experts can contribute their specialized knowledge while our AI systems analyze vast
-                                amounts of data to identify emerging trends and opportunities.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
         <!-- Timeline Section -->
         <section class="py-16 md:py-24 bg-gray-50">
