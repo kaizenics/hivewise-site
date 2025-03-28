@@ -65,10 +65,6 @@
                             <div
                                 class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 z-50">
                                 <div class="py-1">
-                                    <a href="<?php echo esc_url(home_url('/our-story')); ?>"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                        Our Story
-                                    </a>
                                     <a href="<?php echo esc_url(home_url('/team')); ?>"
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                                         Our Team
@@ -137,7 +133,7 @@
                         </svg>
                     </button>
                     <div class="hidden pl-4 mt-1 space-y-1 bg-gray-50 rounded-lg">
-                        <a href="<?php echo esc_url(home_url('/our-story')); ?>" class="block px-4 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 transition-colors">Our Story</a>
+                    
                         <a href="<?php echo esc_url(home_url('/team')); ?>" class="block px-4 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 transition-colors">Our Team</a>
                         <a href="<?php echo esc_url(home_url('/values')); ?>" class="block px-4 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 transition-colors">Our Values</a>
                     </div>
