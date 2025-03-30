@@ -50,12 +50,7 @@
                             </div>
                         </a>
                         
-                        <!-- Our Values link (moved from dropdown) -->
-                        <a href="<?php echo esc_url(home_url('/values')); ?>">
-                            <div class="font-medium text-gray-900 hover:text-blue-600 transition-colors duration-200">
-                                Values
-                            </div>
-                        </a>
+                        
 
                         <!-- Blog link -->
                     <!--    <a href="<?php echo esc_url(home_url('/blog')); ?>"
@@ -112,10 +107,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
-                    <div class="hidden pl-4 mt-1 space-y-1 bg-gray-50 rounded-lg">
-                    
-                        <a href="<?php echo esc_url(home_url('/values')); ?>" class="block px-4 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-100 transition-colors">Our Values</a>
-                    </div>
+                  
                 </div>
 
                
