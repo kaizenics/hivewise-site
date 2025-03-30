@@ -77,10 +77,10 @@ get_header();
                                 Personalized data insights
                             </li>
                         </ul>
-                        <a href="#start-solving"
-                            class="inline-block w-full bg-red-500 text-white text-center px-6 py-4 rounded-xl hover:bg-red-600 transition-colors font-semibold">
-                            Request Reports
-                        </a>
+                        <a href="<?php echo esc_url(home_url('/contact')); ?>"
+                                class="inline-block w-full bg-red-500 text-white text-center px-6 py-4 rounded-xl hover:bg-red-600 transition-colors font-semibold">
+                                Request Reports
+                            </a>
                     </div>
                 </div>
 
@@ -119,10 +119,10 @@ get_header();
                                 Enterprise-level reporting
                             </li>
                         </ul>
-                        <a href="#learn-more"
-                            class="inline-block w-full bg-red-500 text-white text-center px-6 py-4 rounded-xl hover:bg-red-600 transition-colors font-semibold">
-                            Services
-                        </a>
+                        <a href="#services"
+                                class="inline-block w-full bg-red-500 text-white text-center px-6 py-4 rounded-xl hover:bg-red-600 transition-colors font-semibold">
+                                Services
+                            </a>
                     </div>
                 </div>
             </div>
@@ -379,7 +379,7 @@ get_header();
     </section>
 
     <!-- Showcase Section -->
-    <section class="py-20 bg-gray-50">
+    <section id="services" class="py-20 bg-gray-50 scroll-mt-10">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-4">Services</h2>
             <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
@@ -403,7 +403,7 @@ get_header();
                 <!-- Report Card 2 -->
                 <div class="relative group rounded-2xl overflow-hidden">
                     <div class="aspect-[4/3] relative">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hive-tech.jpg"
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hive-tech.jpeg"
                             alt="Regional Development Report" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
 
